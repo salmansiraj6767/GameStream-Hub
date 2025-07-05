@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friends - Gaming Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+        <li><a href="game-details.html"><i class="fas fa-gamepad"></i></a></li>
+        <li><a href="downloads.html"><i class="fas fa-gift"></i></a></li>
+        <li><a href="friends.html" class="active"><i class="fas fa-comment-dots"></i></a></li>
+        <li><a href="statistics.html"><i class="fas fa-bell"></i></a></li>
+        <li><a href="profile.html"><i class="fas fa-cog"></i></a></li>
+      </ul>
+      <button class="add-btn"><i class="fas fa-plus"></i></button>
+    </nav>
+
+    <main class="main-content">
+      <!-- Top Navigation Bar -->
+      <header class="top-nav">
+        <div class="greeting">Good Morning, <span class="username">SALMAN</span></div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search friends">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="top-actions">
+          <div class="notif-circle" id="notifBell" tabindex="0">
+            <i class="fas fa-bell"></i>
+            <div class="notif-dropdown" id="notifDropdown">
+              <h4>Notifications</h4>
+              <ul class="notif-list" id="notifList">
+                <!-- Notifications will be injected here -->
+              </ul>
+              <div class="notif-empty" id="notifEmpty">No new notifications</div>
+            </div>
+          </div>
+          <div class="profile-pic"><a href="profile.html"><img src="assets/images/profile.jpeg" alt="Profile"></a></div>
+        </div>
+      </header>
+
+      <!-- Friends Content -->
+      <section class="friends-page">
+        <div class="page-header">
+          <h1>Friends</h1>
+          <button class="add-friend-btn" onclick="openAddFriendModal()">
+            <i class="fas fa-user-plus"></i>
+            Add Friend
+          </button>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="friends-filter">
+          <button class="filter-tab active" data-filter="all">All Friends (12)</button>
+          <button class="filter-tab" data-filter="online">Online (8)</button>
+          <button class="filter-tab" data-filter="offline">Offline (4)</button>
+          <button class="filter-tab" data-filter="ingame">In Game (3)</button>
+        </div>
+
+        <!-- Friends List -->
+        <div class="friends-grid" id="friends-grid">
+          <!-- Dynamic friends will be injected here -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Friends List Sidebar (Right) -->
+    <aside class="friends-list">
+      <h4>Friends Online</h4>
+      <ul>
+        <li class="friend online"><img src="assets/images/friend2.jpg" alt="Friend"></li>
+        <li class="friend offline"><img src="assets/images/friend3.jpg" alt="Friend"></li>
+        <li class="friend online"><img src="assets/images/friend4.jpg" alt="Friend"></li>
+        <li class="friend online"><img src="assets/images/friend5.jpg" alt="Friend"></li>
+        <li class="friend offline"><img src="assets/images/friend6.jpg" alt="Friend"></li>
+        <li class="friend online"><img src="assets/images/friend7.jpg" alt="Friend"></li>
+      </ul>
+    </aside>
+  </div>
+
+  <!-- Add Friend Modal -->
+  <div id="add-friend-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Add Friend</h2>
+        <button class="close-btn" onclick="closeAddFriendModal()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="friend-username">Username</label>
+          <input type="text" id="friend-username" placeholder="Enter friend's username">
+        </div>
+        <div class="form-group">
+          <label for="friend-avatar">Avatar Preview</label>
+          <div class="avatar-preview">
+            <img id="avatar-preview" src="assets/images/default-avatar.jpg" alt="Avatar Preview">
+            <button type="button" onclick="changeAvatar()">Change Avatar</button>
+          </div>
+        </div>
+        <div class="modal-actions">
+          <button class="btn-secondary" onclick="closeAddFriendModal()">Cancel</button>
+          <button class="btn-primary" onclick="addFriend()">Add Friend</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chat Modal -->
+  <div id="chat-modal" class="modal">
+    <div class="modal-content chat-modal">
+      <div class="modal-header">
+        <div class="chat-header">
+          <img id="chat-friend-avatar" src="" alt="Friend Avatar">
+          <div class="chat-info">
+            <h3 id="chat-friend-name">Friend Name</h3>
+            <span id="chat-friend-status">Online</span>
+          </div>
+        </div>
+        <button class="close-btn" onclick="closeChatModal()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="chat-messages" id="chat-messages">
+          <!-- Chat messages will be injected here -->
+        </div>
+        <div class="chat-input">
+          <input type="text" id="message-input" placeholder="Type a message...">
+          <button onclick="sendMessage()">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/friends.js"></script>
+</body>
+</html> 

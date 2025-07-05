@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Downloads - Gaming Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+        <li><a href="game-details.html"><i class="fas fa-gamepad"></i></a></li>
+        <li><a href="downloads.html" class="active"><i class="fas fa-gift"></i></a></li>
+        <li><a href="friends.html"><i class="fas fa-comment-dots"></i></a></li>
+        <li><a href="statistics.html"><i class="fas fa-bell"></i></a></li>
+        <li><a href="profile.html"><i class="fas fa-cog"></i></a></li>
+      </ul>
+      <button class="add-btn"><i class="fas fa-plus"></i></button>
+    </nav>
+
+    <main class="main-content">
+      <!-- Top Navigation Bar -->
+      <header class="top-nav">
+        <div class="greeting">Good Morning, <span class="username">SALMAN</span></div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search downloads">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="top-actions">
+          <div class="notif-circle" id="notifBell" tabindex="0">
+            <i class="fas fa-bell"></i>
+            <div class="notif-dropdown" id="notifDropdown">
+              <h4>Notifications</h4>
+              <ul class="notif-list" id="notifList">
+                <!-- Notifications will be injected here -->
+              </ul>
+              <div class="notif-empty" id="notifEmpty">No new notifications</div>
+            </div>
+          </div>
+          <div class="profile-pic"><a href="profile.html"><img src="assets/images/profile.jpeg" alt="Profile"></a></div>
+        </div>
+      </header>
+
+      <!-- Downloads Content -->
+      <section class="downloads-page">
+        <div class="page-header">
+          <h1>Downloads</h1>
+          <div class="download-stats">
+            <span class="stat-item">
+              <i class="fas fa-download"></i>
+              <span id="active-downloads">3</span> Active
+            </span>
+            <span class="stat-item">
+              <i class="fas fa-clock"></i>
+              <span id="total-time">2h 15m</span> Remaining
+            </span>
+          </div>
+        </div>
+
+        <!-- Active Downloads -->
+        <div class="downloads-section">
+          <h2>Active Downloads</h2>
+          <div id="active-downloads-list" class="downloads-list">
+            <!-- Dynamic downloads will be injected here -->
+          </div>
+        </div>
+
+        <!-- Completed Downloads -->
+        <div class="downloads-section">
+          <h2>Completed Downloads</h2>
+          <div id="completed-downloads-list" class="downloads-list">
+            <!-- Completed downloads will be shown here -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Friends List Sidebar (Right) -->
+    <aside class="friends-list">
+      <h4>Friends Online</h4>
+      <ul>
+        <li class="friend online"><img src="assets/images/friend2.jpg" alt="Friend"></li>
+        <li class="friend offline"><img src="assets/images/friend3.jpg" alt="Friend"></li>
+        <li class="friend online"><img src="assets/images/friend4.jpg" alt="Friend"></li>
+        <li class="friend online"><img src="assets/images/friend5.jpg" alt="Friend"></li>
+        <li class="friend offline"><img src="assets/images/friend6.jpg" alt="Friend"></li>
+        <li class="friend online"><img src="assets/images/friend7.jpg" alt="Friend"></li>
+      </ul>
+    </aside>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="js/downloads.js"></script>
+</body>
+</html> 

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - Gaming Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+        <li><a href="game-details.html"><i class="fas fa-gamepad"></i></a></li>
+        <li><a href="downloads.html"><i class="fas fa-gift"></i></a></li>
+        <li><a href="friends.html"><i class="fas fa-comment-dots"></i></a></li>
+        <li><a href="statistics.html"><i class="fas fa-bell"></i></a></li>
+        <li><a href="profile.html" class="active"><i class="fas fa-cog"></i></a></li>
+      </ul>
+      <button class="add-btn"><i class="fas fa-plus"></i></button>
+    </nav>
+
+    <main class="main-content">
+      <!-- Top Navigation Bar -->
+      <header class="top-nav">
+        <div class="greeting">Good Morning, <span class="username">SALMAN</span></div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search profile">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="top-actions">
+          <div class="notif-circle" id="notifBell" tabindex="0">
+            <i class="fas fa-bell"></i>
+            <div class="notif-dropdown" id="notifDropdown">
+              <h4>Notifications</h4>
+              <ul class="notif-list" id="notifList">
+                <!-- Notifications will be injected here -->
+              </ul>
+              <div class="notif-empty" id="notifEmpty">No new notifications</div>
+            </div>
+          </div>
+          <div class="profile-pic"><a href="profile.html"><img src="assets/images/profile.jpeg" alt="Profile"></a></div>
+        </div>
+      </header>
+
+      <!-- Profile Content -->
+      <section class="profile-page">
+        <div class="page-header">
+          <h1>Profile & Settings</h1>
+          <button class="save-btn" onclick="saveProfile()">
+            <i class="fas fa-save"></i>
+            Save Changes
+          </button>
+        </div>
+
+        <!-- Profile Overview -->
+        <div class="profile-overview">
+          <div class="profile-header">
+            <div class="profile-avatar-section">
+              <div class="profile-avatar">
+                <img id="profile-avatar-img" src="assets/images/profile.jpeg" alt="Profile Avatar">
+                <div class="avatar-overlay">
+                  <label for="avatar-upload" class="avatar-upload-btn">
+                    <i class="fas fa-camera"></i>
+                  </label>
+                  <input type="file" id="avatar-upload" accept="image/*" onchange="previewAvatar(event)">
+                </div>
+              </div>
+              <div class="profile-info">
+                <h2 id="profile-name">SALMAN</h2>
+                <span class="profile-level">Level 42 • Pro Gamer</span>
+                <div class="profile-stats">
+                  <span class="stat">
+                    <i class="fas fa-gamepad"></i>
+                    24 Games
+                  </span>
+                  <span class="stat">
+                    <i class="fas fa-clock"></i>
+                    12,340h
+                  </span>
+                  <span class="stat">
+                    <i class="fas fa-trophy"></i>
+                    847 Achievements
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile Sections -->
+        <div class="profile-sections">
+          <!-- Personal Information -->
+          <div class="profile-section">
+            <h3>Personal Information</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="display-name">Display Name</label>
+                <input type="text" id="display-name" value="SALMAN" placeholder="Enter display name">
+              </div>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" value="salman_gamer" placeholder="Enter username">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" value="salman@example.com" placeholder="Enter email">
+              </div>
+              <div class="form-group bio-group">
+                <label for="bio">Bio</label>
+                <textarea id="bio" rows="4" placeholder="Tell us about yourself...">Passionate gamer who loves competitive FPS games and RPGs. Always looking for new challenges and friends to play with!</textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Appearance Settings -->
+          <div class="profile-section">
+            <h3>Appearance</h3>
+            <div class="settings-grid">
+              <div class="setting-item">
+                <div class="setting-info">
+                  <h4>Theme</h4>
+                  <p>Choose your preferred theme</p>
+                </div>
+                <div class="theme-toggle">
+                  <button class="theme-btn active" data-theme="dark">
+                    <i class="fas fa-moon"></i>
+                    Dark
+                  </button>
+                  <button class="theme-btn" data-theme="light">
+                    <i class="fas fa-sun"></i>
+                    Light
+                  </button>
+                </div>
+              </div>
+              <div class="setting-item">
+                <div class="setting-info">
+                  <h4>Accent Color</h4>
+                  <p>Choose your accent color</p>
+                </div>
+                <div class="color-picker">
+                  <button class="color-btn active" data-color="purple" style="background: var(--accent-purple)"></button>
+                  <button class="color-btn" data-color="green" style="background: var(--accent-green)"></button>
+                  <button class="color-btn" data-color="blue" style="background: #4d9fff"></button>
+                  <button class="color-btn" data-color="orange" style="background: var(--accent-orange)"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Game Preferences -->
+          <div class="profile-section">
+            <h3>Game Preferences</h3>
+            <div class="preferences-grid">
+              <div class="preference-item">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="notifications" checked>
+                  <span class="checkmark"></span>
+                  <div class="preference-info">
+                    <h4>Game Notifications</h4>
+                    <p>Receive notifications for game updates and events</p>
+                  </div>
+                </label>
+              </div>
+              <div class="preference-item">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="auto-update" checked>
+                  <span class="checkmark"></span>
+                  <div class="preference-info">
+                    <h4>Auto Update Games</h4>
+                    <p>Automatically update games when available</p>
+                  </div>
+                </label>
+              </div>
+              <div class="preference-item">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="friend-requests">
+                  <span class="checkmark"></span>
+                  <div class="preference-info">
+                    <h4>Friend Requests</h4>
+                    <p>Allow friend requests from other players</p>
+                  </div>
+                </label>
+              </div>
+              <div class="preference-item">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="activity-status" checked>
+                  <span class="checkmark"></span>
+                  <div class="preference-info">
+                    <h4>Activity Status</h4>
+                    <p>Show when you're online and playing games</p>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Favorite Games -->
+          <div class="profile-section">
+            <h3>Favorite Games</h3>
+            <div class="favorite-games-grid" id="favorite-games">
+              <div class="favorite-game-item">
+                <img src="assets/images/valorant.webp" alt="Valorant">
+                <div class="game-info">
+                  <h4>Valorant</h4>
+                </div>
+                <button class="remove-favorite" title="Remove"><i class="fas fa-times"></i></button>
+              </div>
+              <div class="favorite-game-item">
+                <img src="assets/images/csgo.jpg" alt="CS:GO">
+                <div class="game-info">
+                  <h4>CS:GO</h4>
+                </div>
+                <button class="remove-favorite" title="Remove"><i class="fas fa-times"></i></button>
+              </div>
+              <div class="favorite-game-item">
+                <img src="assets/images/dota2.webp" alt="Dota 2">
+                <div class="game-info">
+                  <h4>Dota 2</h4>
+                </div>
+                <button class="remove-favorite" title="Remove"><i class="fas fa-times"></i></button>
+              </div>
+              <div class="favorite-game-item">
+                <img src="assets/images/eldenring.webp" alt="Elden Ring">
+                <div class="game-info">
+                  <h4>Elden Ring</h4>
+                </div>
+                <button class="remove-favorite" title="Remove"><i class="fas fa-times"></i></button>
+              </div>
+              <div class="add-game">
+                <div class="add-game-content">
+                  <i class="fas fa-plus"></i>
+                  Add Game
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Account Actions -->
+          <div class="profile-section">
+            <h3>Account Actions</h3>
+            <div class="account-actions">
+              <button class="action-btn secondary">
+                <i class="fas fa-key"></i>
+                Change Password
+              </button>
+              <button class="action-btn secondary">
+                <i class="fas fa-download"></i>
+                Export Data
+              </button>
+              <button class="action-btn danger">
+                <i class="fas fa-trash"></i>
+                Delete Account
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Friends List Sidebar (Right) -->
+    <aside class="friends-list">
+      <h4>Friends Online</h4>
+      <ul>
+        <li class="friend online"><img src="assets/images/friend2.jpg" alt="Friend"></li>
+        <li class="friend offline"><img src="assets/images/friend3.jpg" alt="Friend"></li>
+        <li class="friend online"><img src="assets/images/friend4.jpg" alt="Friend"></li>
+        <li class="friend online"><img src="assets/images/friend5.jpg" alt="Friend"></li>
+        <li class="friend offline"><img src="assets/images/friend6.jpg" alt="Friend"></li>
+        <li class="friend online"><img src="assets/images/friend7.jpg" alt="Friend"></li>
+      </ul>
+    </aside>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html> 
