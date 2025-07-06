@@ -32,7 +32,10 @@ const availableGames = [
   { name: "Elden Ring", image: "images/eldenring.webp" },
   { name: "Uncharted 4", image: "images/Uncharted4.webp" },
   { name: "Dishonored", image: "images/dishonored.jpg" },
-  { name: "FIFA 23", image: "images/fifa23.webp" }
+  { name: "FIFA 23", image: "images/fifa23.webp" },
+  { name: "User 1", image: "images/user1.jpg" },
+  { name: "User 2", image: "images/user2.jpg" },
+  { name: "User 3", image: "images/user3.jpg" }
 ];
 
 // Initialize profile page
