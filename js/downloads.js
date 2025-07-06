@@ -45,7 +45,7 @@ const downloadData = {
       id: 4,
       name: "Valorant",
       type: "FPS",
-      image: "Assets/images/Valorant.png",
+      image: "images/Valorant.png",
       size: "12.8GB",
       downloaded: "12.8GB",
       progress: 100,

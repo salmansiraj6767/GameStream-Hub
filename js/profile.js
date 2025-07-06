@@ -6,7 +6,7 @@ let profileData = {
   username: "salman_gamer",
   email: "salman@example.com",
   bio: "Passionate gamer who loves competitive FPS games and RPGs. Always looking for new challenges and friends to play with!",
-  avatar: "Assets/images/profile.jpeg",
+  avatar: "images/profile.jpeg",
   theme: "dark",
   accentColor: "purple",
   preferences: {
@@ -16,23 +16,23 @@ let profileData = {
     activityStatus: true
   },
   favoriteGames: [
-    { name: "Valorant", image: "Assets/images/Valorant.png" },
-    { name: "CS:GO", image: "Assets/images/csgo.webp" },
-    { name: "Dota 2", image: "Assets/images/dota2.webp" },
-    { name: "Elden Ring", image: "Assets/images/eldenring.webp" }
+    { name: "Valorant", image: "images/Valorant.png" },
+    { name: "CS:GO", image: "images/csgo.webp" },
+    { name: "Dota 2", image: "images/dota2.webp" },
+    { name: "Elden Ring", image: "images/eldenring.webp" }
   ]
 };
 
 // Available games for favorites
 const availableGames = [
-  { name: "Valorant", image: "Assets/images/Valorant.png" },
-  { name: "CS:GO", image: "Assets/images/csgo.webp" },
-  { name: "Dota 2", image: "Assets/images/dota2.webp" },
-  { name: "League of Legends", image: "Assets/images/lol.jpg" },
-  { name: "Elden Ring", image: "Assets/images/eldenring.webp" },
-  { name: "Uncharted 4", image: "Assets/images/Uncharted4.webp" },
-  { name: "Dishonored", image: "Assets/images/dishonored.jpg" },
-  { name: "FIFA 23", image: "Assets/images/fifa23.webp" }
+  { name: "Valorant", image: "images/Valorant.png" },
+  { name: "CS:GO", image: "images/csgo.webp" },
+  { name: "Dota 2", image: "images/dota2.webp" },
+  { name: "League of Legends", image: "images/lol.jpg" },
+  { name: "Elden Ring", image: "images/eldenring.webp" },
+  { name: "Uncharted 4", image: "images/Uncharted4.webp" },
+  { name: "Dishonored", image: "images/dishonored.jpg" },
+  { name: "FIFA 23", image: "images/fifa23.webp" }
 ];
 
 // Initialize profile page

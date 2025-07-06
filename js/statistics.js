@@ -102,7 +102,7 @@ function renderTopGames() {
     <div class="top-game-item">
       <div class="game-rank">#${index + 1}</div>
       <div class="game-info">
-        <img src="${game.image.replace('assets/images/', 'Assets/images/').replace('assets/images/valorant.png', 'Assets/images/Valorant.png').replace('assets/images/Uncharted4.webp', 'Assets/images/Uncharted4.webp')}" alt="${game.name}" class="game-thumb">
+        <img src="${game.image.replace('Assets/images/', 'images/')}" alt="${game.name}" class="game-thumb">
         <div class="game-details">
           <h3>${game.name}</h3>
           <span class="game-hours">${game.hours}h</span>
