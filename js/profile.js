@@ -16,7 +16,7 @@ let profileData = {
     activityStatus: true
   },
   favoriteGames: [
-    { name: "Valorant", image: "Assets/images/valorant.png" },
+    { name: "Valorant", image: "Assets/images/Valorant.png" },
     { name: "CS:GO", image: "Assets/images/csgo.webp" },
     { name: "Dota 2", image: "Assets/images/dota2.webp" },
     { name: "Elden Ring", image: "Assets/images/eldenring.webp" }
@@ -25,7 +25,7 @@ let profileData = {
 
 // Available games for favorites
 const availableGames = [
-  { name: "Valorant", image: "Assets/images/valorant.png" },
+  { name: "Valorant", image: "Assets/images/Valorant.png" },
   { name: "CS:GO", image: "Assets/images/csgo.webp" },
   { name: "Dota 2", image: "Assets/images/dota2.webp" },
   { name: "League of Legends", image: "Assets/images/lol.jpg" },

@@ -4,7 +4,7 @@
 const gameData = {
   valorant: {
     title: "Valorant",
-    banner: "Assets/images/valorant.png",
+    banner: "Assets/images/Valorant.png",
     desc: "Valorant is a multiplayer computer game developed and published by Riot Games. Valorant is Riot Games' first first-person shooter game. It features a unique blend of tactical gameplay and character abilities.",
     tags: ["Multiplayer", "Shooter", "Competitive", "FPS"],
     rating: 4.8,
@@ -23,9 +23,9 @@ const gameData = {
     rating: 4.9,
     reviews: 890,
     screenshots: [
-      "Assets/images/Uncharted41.webp",
-      "Assets/images/Uncharted42.webp",
-      "Assets/images/Uncharted43.jpg"
+      "Assets/images/uncharted41.webp",
+      "Assets/images/uncharted42.webp",
+      "Assets/images/uncharted43.jpg"
     ]
   },
   dishonored: {
@@ -38,7 +38,7 @@ const gameData = {
     screenshots: [
       "Assets/images/dishonored1.webp",
       "Assets/images/dishonored2.webp",
-      "Assets/images/dishonored3.webp"
+      "Assets/images/dishonored3.png"
     ]
   },
   eldenring: {
