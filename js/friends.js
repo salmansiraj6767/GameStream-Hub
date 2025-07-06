@@ -6,7 +6,7 @@ let friendsData = [
     id: 1,
     name: "Alex Johnson",
     username: "alex_gamer",
-    avatar: "assets/images/friend2.jpg",
+    avatar: "images/friend2.jpg",
     status: "online",
     currentGame: null,
     lastSeen: null
@@ -15,7 +15,7 @@ let friendsData = [
     id: 2,
     name: "Sarah Chen",
     username: "sarah_plays",
-    avatar: "assets/images/friend3.jpg",
+    avatar: "images/friend3.jpg",
     status: "offline",
     currentGame: null,
     lastSeen: "2 hours ago"
@@ -24,7 +24,7 @@ let friendsData = [
     id: 3,
     name: "Mike Rodriguez",
     username: "mike_rage",
-    avatar: "assets/images/friend4.jpg",
+    avatar: "images/friend4.jpg",
     status: "ingame",
     currentGame: "Valorant",
     lastSeen: null
@@ -33,7 +33,7 @@ let friendsData = [
     id: 4,
     name: "Emma Wilson",
     username: "emma_warrior",
-    avatar: "assets/images/friend5.jpg",
+    avatar: "images/friend5.jpg",
     status: "online",
     currentGame: null,
     lastSeen: null
@@ -42,7 +42,7 @@ let friendsData = [
     id: 5,
     name: "David Kim",
     username: "david_pro",
-    avatar: "assets/images/friend6.jpg",
+    avatar: "images/friend6.jpg",
     status: "offline",
     currentGame: null,
     lastSeen: "1 day ago"
@@ -51,7 +51,7 @@ let friendsData = [
     id: 6,
     name: "Lisa Thompson",
     username: "lisa_gamer",
-    avatar: "assets/images/friend7.jpg",
+    avatar: "images/friend7.jpg",
     status: "ingame",
     currentGame: "CS:GO",
     lastSeen: null
@@ -60,7 +60,7 @@ let friendsData = [
     id: 7,
     name: "James Brown",
     username: "james_legend",
-    avatar: "assets/images/friend2.jpg",
+    avatar: "images/friend2.jpg",
     status: "online",
     currentGame: null,
     lastSeen: null
@@ -69,7 +69,7 @@ let friendsData = [
     id: 8,
     name: "Maria Garcia",
     username: "maria_queen",
-    avatar: "assets/images/friend3.jpg",
+    avatar: "images/friend3.jpg",
     status: "ingame",
     currentGame: "League of Legends",
     lastSeen: null
@@ -78,7 +78,7 @@ let friendsData = [
     id: 9,
     name: "Tom Anderson",
     username: "tom_ace",
-    avatar: "assets/images/friend4.jpg",
+    avatar: "images/friend4.jpg",
     status: "online",
     currentGame: null,
     lastSeen: null
@@ -87,7 +87,7 @@ let friendsData = [
     id: 10,
     name: "Anna Lee",
     username: "anna_sniper",
-    avatar: "assets/images/friend5.jpg",
+    avatar: "images/friend5.jpg",
     status: "offline",
     currentGame: null,
     lastSeen: "3 hours ago"
@@ -96,7 +96,7 @@ let friendsData = [
     id: 11,
     name: "Chris Taylor",
     username: "chris_king",
-    avatar: "assets/images/friend6.jpg",
+    avatar: "images/friend6.jpg",
     status: "online",
     currentGame: null,
     lastSeen: null
@@ -105,7 +105,7 @@ let friendsData = [
     id: 12,
     name: "Rachel Green",
     username: "rachel_gaming",
-    avatar: "assets/images/friend7.jpg",
+    avatar: "images/friend7.jpg",
     status: "offline",
     currentGame: null,
     lastSeen: "5 hours ago"
@@ -218,7 +218,7 @@ function updateFilterCounts() {
 function openAddFriendModal() {
   document.getElementById('add-friend-modal').style.display = 'flex';
   document.getElementById('friend-username').value = '';
-  document.getElementById('avatar-preview').src = 'Assets/images/default-avatar.jpg';
+  document.getElementById('avatar-preview').src = 'images/default-avatar.jpg';
 }
 
 // Close add friend modal
@@ -229,12 +229,12 @@ function closeAddFriendModal() {
 // Change avatar (simulated)
 function changeAvatar() {
   const avatars = [
-    'Assets/images/friend2.jpg',
-    'Assets/images/friend3.jpg',
-    'Assets/images/friend4.jpg',
-    'Assets/images/friend5.jpg',
-    'Assets/images/friend6.jpg',
-    'Assets/images/friend7.jpg'
+    'images/friend2.jpg',
+    'images/friend3.jpg',
+    'images/friend4.jpg',
+    'images/friend5.jpg',
+    'images/friend6.jpg',
+    'images/friend7.jpg'
   ];
   
   const randomAvatar = avatars[Math.floor(Math.random() * avatars.length)];

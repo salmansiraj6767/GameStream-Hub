@@ -8,11 +8,11 @@ const statsData = {
     achievements: 847,
     winRate: 68.5,
     games: [
-      { name: "Dota 2", hours: 2340, image: "assets/images/dota2.webp" },
-      { name: "CS:GO", hours: 5420, image: "assets/images/csgo.webp" },
-      { name: "League of Legends", hours: 4580, image: "assets/images/lol.jpg" },
-      { name: "Valorant", hours: 1200, image: "assets/images/valorant.png" },
-      { name: "Elden Ring", hours: 800, image: "assets/images/eldenring.webp" }
+      { name: "Dota 2", hours: 2340, image: "images/dota2.webp" },
+      { name: "CS:GO", hours: 5420, image: "images/csgo.webp" },
+      { name: "League of Legends", hours: 4580, image: "images/lol.jpg" },
+      { name: "Valorant", hours: 1200, image: "images/valorant.png" },
+      { name: "Elden Ring", hours: 800, image: "images/eldenring.webp" }
     ],
     activity: [
       { type: "achievement", game: "Elden Ring", text: "Unlocked 'Elden Lord' achievement", time: "2 hours ago" },
@@ -28,11 +28,11 @@ const statsData = {
     achievements: 12,
     winRate: 2.3,
     games: [
-      { name: "Valorant", hours: 45, image: "assets/images/valorant.png" },
-      { name: "CS:GO", hours: 38, image: "assets/images/csgo.webp" },
-      { name: "Elden Ring", hours: 32, image: "assets/images/eldenring.webp" },
-      { name: "Dota 2", hours: 28, image: "assets/images/dota2.webp" },
-      { name: "League of Legends", hours: 13, image: "assets/images/lol.jpg" }
+      { name: "Valorant", hours: 45, image: "images/valorant.png" },
+      { name: "CS:GO", hours: 38, image: "images/csgo.webp" },
+      { name: "Elden Ring", hours: 32, image: "images/eldenring.webp" },
+      { name: "Dota 2", hours: 28, image: "images/dota2.webp" },
+      { name: "League of Legends", hours: 13, image: "images/lol.jpg" }
     ],
     activity: [
       { type: "achievement", game: "Elden Ring", text: "Unlocked 'Elden Lord' achievement", time: "2 hours ago" },
@@ -46,9 +46,9 @@ const statsData = {
     achievements: 3,
     winRate: 1.2,
     games: [
-      { name: "Valorant", hours: 18, image: "assets/images/valorant.png" },
-      { name: "CS:GO", hours: 15, image: "assets/images/csgo.webp" },
-      { name: "Elden Ring", hours: 9, image: "assets/images/eldenring.webp" }
+      { name: "Valorant", hours: 18, image: "images/valorant.png" },
+      { name: "CS:GO", hours: 15, image: "images/csgo.webp" },
+      { name: "Elden Ring", hours: 9, image: "images/eldenring.webp" }
     ],
     activity: [
       { type: "game", game: "Valorant", text: "Played for 3 hours", time: "4 hours ago" },
@@ -61,8 +61,8 @@ const statsData = {
     achievements: 0,
     winRate: 0.5,
     games: [
-      { name: "Valorant", hours: 3, image: "assets/images/valorant.png" },
-      { name: "CS:GO", hours: 3, image: "assets/images/csgo.webp" }
+      { name: "Valorant", hours: 3, image: "images/valorant.png" },
+      { name: "CS:GO", hours: 3, image: "images/csgo.webp" }
     ],
     activity: [
       { type: "game", game: "Valorant", text: "Played for 3 hours", time: "4 hours ago" },
@@ -102,7 +102,7 @@ function renderTopGames() {
     <div class="top-game-item">
       <div class="game-rank">#${index + 1}</div>
       <div class="game-info">
-        <img src="${game.image.replace('Assets/images/', 'images/')}" alt="${game.name}" class="game-thumb">
+        <img src="${game.image.replace('assets/images/', 'images/').replace('Assets/images/', 'images/')}" alt="${game.name}" class="game-thumb">
         <div class="game-details">
           <h3>${game.name}</h3>
           <span class="game-hours">${game.hours}h</span>
