@@ -4,54 +4,54 @@
 const gameData = {
   valorant: {
     title: "Valorant",
-    banner: "assets/images/valorant.png",
+    banner: "Assets/images/valorant.png",
     desc: "Valorant is a multiplayer computer game developed and published by Riot Games. Valorant is Riot Games' first first-person shooter game. It features a unique blend of tactical gameplay and character abilities.",
     tags: ["Multiplayer", "Shooter", "Competitive", "FPS"],
     rating: 4.8,
     reviews: 1250,
     screenshots: [
-      "assets/images/valorant1.webp",
-      "assets/images/valorant2.webp",
-      "assets/images/valorant3.jpg"
+      "Assets/images/valorant1.webp",
+      "Assets/images/valorant2.webp",
+      "Assets/images/valorant3.jpg"
     ]
   },
   uncharted4: {
     title: "Uncharted 4: A Thief's End",
-    banner: "assets/images/Uncharted4.webp",
+    banner: "Assets/images/Uncharted4.webp",
     desc: "Sequel to Uncharted 3: Drake's Deception and the final installment of Nathan Drake's adventures. Follow Nathan Drake as he embarks on a globe-trotting journey in pursuit of a historical conspiracy behind a fabled pirate treasure.",
     tags: ["Adventure", "Story Rich", "Single Player", "Action"],
     rating: 4.9,
     reviews: 890,
     screenshots: [
-      "assets/images/Uncharted41.webp",
-      "assets/images/Uncharted42.webp",
-      "assets/images/Uncharted43.jpg"
+      "Assets/images/Uncharted41.webp",
+      "Assets/images/Uncharted42.webp",
+      "Assets/images/Uncharted43.jpg"
     ]
   },
   dishonored: {
     title: "Dishonored: Standard Edition",
-    banner: "assets/images/dishonored.jpg",
+    banner: "Assets/images/dishonored.jpg",
     desc: "Action-adventure stealth game developed by Arkane Studios and published by Bethesda Softworks. Set in the fictional, plague-ridden industrial city of Dunwall, where you play as Corvo Attano, the legendary bodyguard to the Empress.",
     tags: ["Stealth", "Action", "Adventure", "Single Player"],
     rating: 4.7,
     reviews: 650,
     screenshots: [
-      "assets/images/dishonored1.webp",
-      "assets/images/dishonored2.webp",
-      "assets/images/dishonored3.webp"
+      "Assets/images/dishonored1.webp",
+      "Assets/images/dishonored2.webp",
+      "Assets/images/dishonored3.webp"
     ]
   },
   eldenring: {
     title: "Elden Ring",
-    banner: "assets/images/eldenring.webp",
+    banner: "Assets/images/eldenring.webp",
     desc: "Action role-playing game developed by FromSoftware and published by Bandai Namco Entertainment. Set in the Lands Between, where you play as a Tarnished, guided by grace to become the Elden Lord.",
     tags: ["RPG", "Action", "Open World", "Challenging"],
     rating: 4.9,
     reviews: 2100,
     screenshots: [
-      "assets/images/eldenring1.jpg",
-      "assets/images/eldenring2.webp",
-      "assets/images/eldenring3.webp"
+      "Assets/images/eldenring1.jpg",
+      "Assets/images/eldenring2.webp",
+      "Assets/images/eldenring3.webp"
     ]
   }
 };

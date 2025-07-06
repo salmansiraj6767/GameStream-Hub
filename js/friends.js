@@ -218,7 +218,7 @@ function updateFilterCounts() {
 function openAddFriendModal() {
   document.getElementById('add-friend-modal').style.display = 'flex';
   document.getElementById('friend-username').value = '';
-  document.getElementById('avatar-preview').src = 'assets/images/default-avatar.jpg';
+  document.getElementById('avatar-preview').src = 'Assets/images/default-avatar.jpg';
 }
 
 // Close add friend modal
@@ -229,12 +229,12 @@ function closeAddFriendModal() {
 // Change avatar (simulated)
 function changeAvatar() {
   const avatars = [
-    'assets/images/friend2.jpg',
-    'assets/images/friend3.jpg',
-    'assets/images/friend4.jpg',
-    'assets/images/friend5.jpg',
-    'assets/images/friend6.jpg',
-    'assets/images/friend7.jpg'
+    'Assets/images/friend2.jpg',
+    'Assets/images/friend3.jpg',
+    'Assets/images/friend4.jpg',
+    'Assets/images/friend5.jpg',
+    'Assets/images/friend6.jpg',
+    'Assets/images/friend7.jpg'
   ];
   
   const randomAvatar = avatars[Math.floor(Math.random() * avatars.length)];

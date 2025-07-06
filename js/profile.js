@@ -6,7 +6,7 @@ let profileData = {
   username: "salman_gamer",
   email: "salman@example.com",
   bio: "Passionate gamer who loves competitive FPS games and RPGs. Always looking for new challenges and friends to play with!",
-  avatar: "assets/images/profile.jpeg",
+  avatar: "Assets/images/profile.jpeg",
   theme: "dark",
   accentColor: "purple",
   preferences: {
@@ -16,23 +16,23 @@ let profileData = {
     activityStatus: true
   },
   favoriteGames: [
-    { name: "Valorant", image: "assets/images/valorant.png" },
-    { name: "CS:GO", image: "assets/images/csgo.webp" },
-    { name: "Dota 2", image: "assets/images/dota2.webp" },
-    { name: "Elden Ring", image: "assets/images/eldenring.webp" }
+    { name: "Valorant", image: "Assets/images/valorant.png" },
+    { name: "CS:GO", image: "Assets/images/csgo.webp" },
+    { name: "Dota 2", image: "Assets/images/dota2.webp" },
+    { name: "Elden Ring", image: "Assets/images/eldenring.webp" }
   ]
 };
 
 // Available games for favorites
 const availableGames = [
-  { name: "Valorant", image: "assets/images/valorant.png" },
-  { name: "CS:GO", image: "assets/images/csgo.webp" },
-  { name: "Dota 2", image: "assets/images/dota2.webp" },
-  { name: "League of Legends", image: "assets/images/lol.jpg" },
-  { name: "Elden Ring", image: "assets/images/eldenring.webp" },
-  { name: "Uncharted 4", image: "assets/images/Uncharted4.webp" },
-  { name: "Dishonored", image: "assets/images/dishonored.jpg" },
-  { name: "FIFA 23", image: "assets/images/fifa23.webp" }
+  { name: "Valorant", image: "Assets/images/valorant.png" },
+  { name: "CS:GO", image: "Assets/images/csgo.webp" },
+  { name: "Dota 2", image: "Assets/images/dota2.webp" },
+  { name: "League of Legends", image: "Assets/images/lol.jpg" },
+  { name: "Elden Ring", image: "Assets/images/eldenring.webp" },
+  { name: "Uncharted 4", image: "Assets/images/Uncharted4.webp" },
+  { name: "Dishonored", image: "Assets/images/dishonored.jpg" },
+  { name: "FIFA 23", image: "Assets/images/fifa23.webp" }
 ];
 
 // Initialize profile page
